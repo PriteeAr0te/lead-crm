@@ -30,6 +30,29 @@ body {
   overflow-x: hidden;
 }
 
+.bg-hero {
+  background: url("./assets/img/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-gradient {
+  position: relative;
+  background: linear-gradient(to right,
+      #5ED3FF,
+      #6EC6FE,
+      #EB65F4,
+      #FD58F2);
+}
+
+.hero-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
 .shadow-custom {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -47,4 +70,24 @@ body {
   background-color: #24294D;
   border-radius: 10px;
   border: 2px solid lightgray;
+}
+
+.scroll-animation {
+  display: flex;
+  width: max-content;
+  animation: loop-scroll 50s linear infinite;
+}
+
+.scroll-animation:hover {
+  animation-play-state: paused;
+}
+
+@keyframes loop-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }

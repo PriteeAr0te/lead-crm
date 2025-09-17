@@ -1,9 +1,15 @@
+import './assets/theme.scss'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import FeaturesScroll from './components/FeaturesScroll'
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold">Lead CRM</h1>
+      <Header />
+      <Hero />
+      <FeaturesScroll />
     </>
   )
 }

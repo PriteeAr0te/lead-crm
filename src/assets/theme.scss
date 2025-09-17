@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$primary-color: #2D96BC;
+$primary-dark-color: #01B2D8;
+$secondary-color: #B3FC6A;
+$accent-color: #090F4E;
+$nav-color: #222222;
+$text-color: #1f2937;
+$bg-color: #ffffff;
+$heading-color: #121212;
+$base-color: #363636;
+$subheading-color: #63657E;
+
+$font-family-base: 'Exo', sans-serif;
+$font-weight-base: 600;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+$spacing-unit: 1rem;
+$border-radius: 12px;
+
+body {
+    font-family: $font-family-base;
+    font-weight: $font-weight-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    background: $bg-color;
+    color: $text-color;
+}
+
+.bg-primary {
+    background-color: $primary-color;
+}
+
+.bg-primary-dark {
+    background-color: $primary-dark-color;
+}
+
+.bg-secondary {
+    background-color: $secondary-color;
+}
+
+.bg-accent {
+    background-color: $accent-color;
+}
+
+.bg-heading {
+    background-color: $heading-color;
+}
+
+.p {
+    color: $base-color;
+}
+
+.bg-white {
+    background-color: $bg-color;
+}
+
+.text-primary {
+    color: $primary-color;
+}
+
+.text-primary:hover,
+.text-primary:active,
+.text-primary:focus {
+    color: $primary-color;
+}
+
+.text-subheading {
+    color: $subheading-color;
+}
+
+.text-nav {
+    color: $nav-color;
+}
+
+.text-nav:hover {
+    color: $primary-color;
+}
+
+.text-primary-dark {
+    color: $primary-dark-color;
+}
+
+.text-primary-dark:hover {
+    color: $primary-color;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+.text-secondary:hover {
+    color: $primary-color;
+}
+
+.text-accent {
+    color: $accent-color;
+}
+
+.text-accent:hover {
+    color: $primary-color;
+}
+
+.text-heading {
+    color: $heading-color;
+}
+
+.text-para {
+    color: $base-color;
+}
+
+.text-white {
+    color: $bg-color;
+}
+
+.border-primary {
+    border: 1px solid $primary-color;
+    border-radius: $border-radius;
+}
+
+.border-secondary {
+    border: 2px solid $secondary-color;
+    border-radius: $border-radius;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    color: white;
+    border-radius: $border-radius;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid $primary-color;
+
+}
+
+.btn-secondary {
+    background-color: $secondary-color;
+    color: $accent-color;
+    border-radius: $border-radius;
+    transition: all 0.2s ease-in-out;
+}
