@@ -8,10 +8,11 @@ import Chrome from '../assets/img/chrome.png'
 import Share from '../assets/img/share.png'
 import { Star } from 'lucide-react'
 import Chrome2 from '../assets/img/chrome-logo.png'
+import Button2 from './Button2'
 
 const Hero = () => {
     return (
-        <section className='w-screen h-full bg-hero py-10 flex flex-col justify-center items-center mx-2 sm:mx-4'>
+        <section className='w-screen h-full bg-hero py-10 flex flex-col justify-center items-center mx-2 sm:mx-4 border-b border-[#F1F1F1]'>
             <div className='w-full max-w-5xl mx-auto flex flex-col gap-6 justify-center items-center'>
                 <span className='w-fit px-2 py-1.5 flex gap-2 items-center rounded-lg border-primary text-subheading'>
                     <img src={rocket} alt="rocket" />
@@ -71,7 +72,7 @@ const Hero = () => {
                 </div>
 
                 <div className='flex h-full items-stretch justify-center gap-6'>
-                    <div className='rounded-lg px-4 py-3 flex gap-6 items-center text-white bg-[#373737]'>
+                    <button className='rounded-lg px-4 py-3 flex gap-6 items-center text-white bg-[#373737]'>
                         <p className=''>
                             <span className='text-white/75'>Available in</span> <br />
                             <span>Chrome Web Store</span>
@@ -80,10 +81,8 @@ const Hero = () => {
                         <span className='p-2 bg-white rounded-full'>
                             <img src={Chrome2} width={30} alt="chrome web store" />
                         </span>
-                    </div>
-                    <div className='px-4 flex text-center items-center py-3 text-[#242424] rounded-lg bg-[#B3FC6A] font-semibold'>
-                        Get a Free Trial Now!
-                    </div>
+                    </button>
+                    <Button2 text=" Get a Free Trial Now!" />
 
                 </div>
             </div>
