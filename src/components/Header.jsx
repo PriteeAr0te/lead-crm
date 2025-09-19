@@ -43,11 +43,11 @@ const Header = () => {
                 </nav>
 
                 <div className="hidden md:flex gap-2 items-center">
-                    <button className="btn-primary capitalize font-normal px-4 py-2 text-white cursor-pointer">
+                    <button className="bg-[#2D96BC] btn-primary text-white px-4 py-2 rounded-lg border border-[#2D96BC] transition-all ease-in-out duration-300 hover:bg-white hover:text-[#2D96BC] focus:text-[#2D96BC] focus:bg-white cursor-pointer">
                         Get Your Free Account
                     </button>
 
-                    <button className="flex gap-2 items-center px-4 py-2 border border-primary rounded-md text-primary cursor-pointer">
+                    <button className="flex gap-2 items-center px-4 py-2 border border-primary rounded-md text-primary cursor-pointer hover:bg-[#DFEFFF] transition-all ease-in-out duration-300">
                         <LogIn size={20} />
                         <span>Login</span>
                     </button>

@@ -76,7 +76,7 @@ body {
 .text-primary:hover,
 .text-primary:active,
 .text-primary:focus {
-    color: $primary-color;
+    color: #2D96BC;
 }
 
 .text-subheading {
@@ -148,7 +148,13 @@ body {
     border-radius: $border-radius;
     transition: all 0.2s ease-in-out;
     border: 1px solid $primary-color;
+}
 
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: white;
+    color: $primary-color;
 }
 
 .btn-secondary {

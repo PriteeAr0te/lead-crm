@@ -8,6 +8,7 @@ import Testimonials from './components/Testimonials'
 import LinkedinSales from './components/LinkedinSales'
 import LeadCRM from './components/LeadCRM'
 import LinkedinRevenue from './components/LinkedinRevenue'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <LinkedinSales />
       <LeadCRM />
       <LinkedinRevenue />
+      <Footer />
     </>
   )
 }

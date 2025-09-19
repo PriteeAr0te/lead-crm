@@ -1,12 +1,13 @@
 import React from 'react'
-import Chat from '../assets/img/chat.png'
-import CRMFlow from '../assets/img/crm-flow.png'
 import Button2 from './Button2'
+import Collaboration from '../assets/img/collaboration.png'
 
 const LinkedinRevenue = () => {
     return (
         <section className='w-full bg-[#EAEFFA] py-12 relative mt-4'>
-
+            <div className='absolute -top-36 right-0'>
+                <img src={Collaboration} alt="collaboration" className='opacity-40 sm:opacity-60' />
+            </div>
             <div className='w-full flex flex-col justify-center items-center max-w-7xl px-2 sm:px-4 lg:px-6 xl:px-8 2xl:px-10'>
                 <h2 className='text-accent z-40 text-3xl sm:text-4xl font-bold text-left'>
                     Join Thousands of Professionals Using LeadCRM
