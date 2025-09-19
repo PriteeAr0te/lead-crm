@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import TestimonialCard from "./TestimonialCard";
 import Share from "../assets/img/share.png";
 import Person1 from "../assets/img/person-1.png";
@@ -50,12 +50,14 @@ const testimonials = [
 
 const Testimonials = () => {
   const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [slidesToShow, setSlidesToShow] = useState(3);
 
   const settings = {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     responsive: [
       {
@@ -71,24 +73,35 @@ const Testimonials = () => {
         },
       },
     ],
+    afterChange: (index) => setCurrentSlide(index),
+    onInit: () => {
+      if (window.innerWidth < 640) setSlidesToShow(1);
+      else if (window.innerWidth < 1024) setSlidesToShow(2);
+      else setSlidesToShow(3);
+    },
   };
+
+  const isPrevDisabled = currentSlide === 0;
+  const isNextDisabled = currentSlide >= testimonials.length - slidesToShow;
 
   return (
     <section className="w-full max-w-7xl mx-auto py-12 px-3 sm:px-5 md:px-10">
-      <div className="flex justify-between items-center gap-4 my-6">
+      <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 my-6">
         <h2 className="text-accent text-3xl sm:text-4xl font-bold mb-2">
           What people are saying about LeadCRM
         </h2>
         <div className="flex gap-4 items-center">
           <button
             onClick={() => sliderRef.current.slickPrev()}
-            className="w-[32px] h-[32px] flex items-center justify-center text-gray-800 rounded-full border border-[#090F4E] hover:bg-[#090F4E] hover:text-white transition-all duration-300 cursor-pointer"
+            disabled={isPrevDisabled}
+            className="w-[32px] h-[32px] flex items-center justify-center text-gray-800 rounded-full border border-[#090F4E] hover:bg-[#090F4E] hover:text-white transition-all duration-300 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <ChevronLeft />
           </button>
           <button
             onClick={() => sliderRef.current.slickNext()}
-            className="w-[32px] h-[32px] flex items-center justify-center text-gray-800 rounded-full border border-[#090F4E] hover:bg-[#090F4E] hover:text-white transition-all duration-300 cursor-pointer"
+            disabled={isNextDisabled}
+            className="w-[32px] h-[32px] flex items-center justify-center text-gray-800 rounded-full border border-[#090F4E] hover:bg-[#090F4E] hover:text-white transition-all duration-300 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <ChevronRight />
           </button>

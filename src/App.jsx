@@ -5,6 +5,9 @@ import FeaturesScroll from './components/FeaturesScroll'
 import Comparison from './components/Comparison'
 import HowWorks from './components/HowWorks'
 import Testimonials from './components/Testimonials'
+import LinkedinSales from './components/LinkedinSales'
+import LeadCRM from './components/LeadCRM'
+import LinkedinRevenue from './components/LinkedinRevenue'
 
 function App() {
 
@@ -16,6 +19,9 @@ function App() {
       <Comparison />
       <HowWorks />
       <Testimonials />
+      <LinkedinSales />
+      <LeadCRM />
+      <LinkedinRevenue />
     </>
   )
 }

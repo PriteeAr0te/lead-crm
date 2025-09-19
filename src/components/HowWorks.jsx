@@ -9,16 +9,16 @@ import BallShape from '../assets/img/ball-shape.png'
 
 const HowWorks = () => {
     return (
-        <section className='w-full h-full px-3 sm:px-5 md:px-10 mx-auto border-t border-[#F1F1F1] py-12 bg-[#EAEFFA] relative'>
+        <section className='w-full h-full px-3 sm:px-5 md:px-10 mx-auto border-t border-[#F1F1F1] pt-12 pb-12 lg:pb-2 bg-[#EAEFFA] relative'>
             <h2 className='text-accent text-3xl sm:text-4xl font-bold mb-2'>
                 How it Works
             </h2>
             <p className='text-[#4C4C4C]'>From setup to success in <strong>4 simple steps</strong></p>
 
             <div className='w-full max-w-7xl mx-auto relative mt-2'>
-                <img className='inline-flex -translate-y-2' src={ArrowBG} alt="arrow-bg" />
-                <div className='bg-transparent w-full h-full gap-6 inline-flex -translate-y-30 items-stretch justify-center'>
-                    <div className='bg-white rounded-lg p-4 border-2 border-white hover:border-[#2D96BC] hover:translate-y-[-4px] transition-all duration-500 hover:shadow-md max-w-[290px] space-y-3'>
+                <img className='hidden lg:inline-flex lg:-translate-y-2' src={ArrowBG} alt="arrow-bg" />
+                <div className='bg-transparent w-full h-full gap-6 inline-flex flex-wrap mt-8 lg:mt-0 lg:-translate-y-26 xl:-translate-y-30 items-stretch justify-center'>
+                    <div className='bg-white rounded-lg p-4 border-2 border-white hover:border-[#2D96BC] hover:translate-y-[-4px] transition-all duration-500 hover:shadow-md w-full mx-2 sm:mx-0 sm:max-w-[290px] space-y-3'>
                         <h2 className='text-[84px] leading-[84px] font-caveat text-center font-[1000] text-primary'>1</h2>
                         <h3 className='text-2xl text-accent ont-semibold text-center'>
                             Install the Extension
@@ -30,7 +30,7 @@ const HowWorks = () => {
                         <img src={InstallExtension} alt="install extension" />
 
                     </div>
-                    <div className='bg-white rounded-lg p-4 border-2 border-white hover:border-[#2D96BC] hover:translate-y-[-4px] transition-all duration-500 hover:shadow-md max-w-[290px] space-y-3'>
+                    <div className='bg-white rounded-lg p-4 border-2 border-white hover:border-[#2D96BC] hover:translate-y-[-4px] transition-all duration-500 hover:shadow-md w-full mx-2 sm:mx-0 sm:max-w-[290px] space-y-3'>
                         <h2 className='text-[84px] leading-[84px] font-caveat text-center font-[1000] text-primary'>2</h2>
                         <h3 className='text-2xl text-accent ont-semibold text-center'>
                             Browse LinkedIn
@@ -42,7 +42,7 @@ const HowWorks = () => {
                         <img src={BrowseLinkedIn} alt="Browse LinkedIn" />
 
                     </div>
-                    <div className='bg-white rounded-lg p-4 border-2 border-white hover:border-[#2D96BC] hover:translate-y-[-4px] transition-all duration-500 hover:shadow-md max-w-[290px] space-y-3'>
+                    <div className='bg-white rounded-lg p-4 border-2 border-white hover:border-[#2D96BC] hover:translate-y-[-4px] transition-all duration-500 hover:shadow-md w-full mx-2 sm:mx-0 sm:max-w-[290px] space-y-3'>
                         <h2 className='text-[84px] leading-[84px] font-caveat text-center font-[1000] text-primary'>3</h2>
                         <h3 className='text-2xl text-accent ont-semibold text-center'>
                             Get Enriched Data
@@ -55,7 +55,7 @@ const HowWorks = () => {
                         <img src={GetData} alt="Get Data" />
 
                     </div>
-                    <div className='bg-white rounded-lg p-4 border-2 border-white hover:border-[#2D96BC] hover:translate-y-[-4px] transition-all duration-500 hover:shadow-md max-w-[290px] space-y-3'>
+                    <div className='bg-white rounded-lg p-4 border-2 border-white hover:border-[#2D96BC] hover:translate-y-[-4px] transition-all duration-500 hover:shadow-md w-full mx-2 sm:mx-0 sm:max-w-[290px] space-y-3'>
                         <h2 className='text-[84px] leading-[84px] font-caveat text-center font-[1000] text-primary'>4</h2>
                         <h3 className='text-2xl text-accent ont-semibold text-center'>
                             Sync to CRM Instantly
@@ -70,7 +70,7 @@ const HowWorks = () => {
                 </div>
             </div>
 
-            <div className='w-full h-full inline-flex translate-y-[-50px] justify-center items-center'>
+            <div className='w-full h-full inline-flex mt-8 lg:mt-0 lg:translate-y-[-60px] justify-center items-center'>
                 <Button2 text="Try LeadCRM Now" arrow={true} />
             </div>
 

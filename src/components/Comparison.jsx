@@ -12,7 +12,7 @@ import Arrow from '../assets/img/arrow.png'
 const Comparison = () => {
     return (
         <section className='w-full py-12 max-w-7xl mx-auto border-t border-[#F1F1F1]'>
-            <h2 className='text-center text-4xl text-accent font-semibold'>
+            <h2 className='text-center text-4xl text-accent font-semibold mx-2 sm:mx-4'>
                 Every LinkedIn Prospector faces these daily challenges
             </h2>
 

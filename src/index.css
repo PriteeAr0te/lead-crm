@@ -67,6 +67,12 @@ body {
   pointer-events: none;
 }
 
+.background-img {
+  background: url("./assets/img/background-img.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .border-danger:hover {
   border: 1px solid #D24B68 !important;
 }
